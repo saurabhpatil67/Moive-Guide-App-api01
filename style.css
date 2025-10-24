@@ -1,0 +1,76 @@
+/* import Roboto font from google font  */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background: #eaba2a;
+}
+
+nav{
+   background:  #493909;
+   color: #fff;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px;
+}
+
+.search-container input, button{
+    padding: 5px 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.search-container input{
+    border-radius: 3px;
+    outline: none;
+}
+
+.search-container button{
+    border-radius:  3px;
+    background: #f0b505;
+    cursor: pointer;
+    transition:all .4s ease-in-out;
+}
+
+.search-container button:hover{
+    background: #b77803;
+    color: #fff;
+}
+
+/* main section style  */
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-block: 38px;
+}
+
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+/* footer style  */
+footer{
+    text-align: center;
+    background:  #493909;
+   color: #fff;
+   padding-block: 20px;
+   margin-top: 40px;
+   font-size: 20px;
+}
