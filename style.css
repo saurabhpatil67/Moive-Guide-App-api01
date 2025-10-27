@@ -62,8 +62,79 @@ main section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
+    min-height: 72vh;
 }
+
+.moive-container{
+    display: flex;
+    justify-content: center;
+    /* gap: 20px; */
+    background: #ffcf40;
+    box-shadow: 0 0 15px #000;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.moive-container.noBackground{
+    background: none;
+    box-shadow: none;
+}
+.moive-poster img{
+    height: 100%;
+    margin-right: 30px;
+    object-fit: cover;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 5px 0 10px #000;
+    
+    
+}
+
+.moive-info{
+    padding-inline: 15px;
+
+}
+
+.moive-info h2{
+    text-align: center;
+    font-size: 32px;
+    margin: 20px 0 12px 0;
+}
+
+/* so many p tag i want h2 sibiling  */
+.moive-info h2+p{
+    text-align: center;
+}
+
+.moive-info .moive-genre p {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 14px;
+    margin-inline: 5px ;
+    border: 2px solid #000;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.moive-info .moive-genre{
+    display: flex;
+    justify-content: center;
+    margin-block: 15px;
+}
+
+.moive-info p{
+    font-size: 18px;
+    margin-block: 16px;
+    line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
 
 /* footer style  */
 footer{
