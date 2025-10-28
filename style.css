@@ -1,24 +1,23 @@
 /* import Roboto font from google font  */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
 
-body{
+body {
     background: #eaba2a;
 }
 
-nav{
-   background:  #493909;
-   color: #fff;
+nav {
+    background: #493909;
+    color: #fff;
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,45 +26,46 @@ nav{
     padding: 18px;
 }
 
-.search-container input, button{
+.search-container input,
+button {
     padding: 5px 10px;
     border: none;
     font-size: 16px;
 }
 
-.search-container input{
+.search-container input {
     border-radius: 3px;
     outline: none;
 }
 
-.search-container button{
-    border-radius:  3px;
+.search-container button {
+    border-radius: 3px;
     background: #f0b505;
     cursor: pointer;
-    transition:all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
-.search-container button:hover{
+.search-container button:hover {
     background: #b77803;
     color: #fff;
 }
 
 /* main section style  */
 
-main{
+main {
     max-width: 1200px;
     margin: 0 auto;
     margin-block: 38px;
 }
 
-main section{
+main section {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 72vh;
 }
 
-.moive-container{
+.moive-container {
     display: flex;
     justify-content: center;
     /* gap: 20px; */
@@ -75,33 +75,32 @@ main section{
     border-radius: 5px;
 }
 
-.moive-container.noBackground{
+.moive-container.noBackground {
     background: none;
     box-shadow: none;
+    text-align: center;
 }
-.moive-poster img{
+
+.moive-poster img {
     height: 100%;
     margin-right: 30px;
     object-fit: cover;
     border-radius: 5px 0 0 5px;
     box-shadow: 5px 0 10px #000;
-    
-    
 }
 
-.moive-info{
+.moive-info {
     padding-inline: 15px;
-
 }
 
-.moive-info h2{
+.moive-info h2 {
     text-align: center;
     font-size: 32px;
     margin: 20px 0 12px 0;
 }
 
 /* so many p tag i want h2 sibiling  */
-.moive-info h2+p{
+.moive-info h2+p {
     text-align: center;
 }
 
@@ -109,39 +108,62 @@ main section{
     background-color: #000;
     color: #fff;
     padding: 5px 14px;
-    margin-inline: 5px ;
+    margin-inline: 5px;
     border: 2px solid #000;
     border-radius: 6px;
     font-weight: 700;
 }
 
-.moive-info .moive-genre{
+.moive-info .moive-genre {
     display: flex;
     justify-content: center;
     margin-block: 15px;
+    overflow-x: auto;
 }
 
-.moive-info p{
+.moive-info p {
     font-size: 18px;
     margin-block: 16px;
     line-height: 24px;
 }
 
-
-
-
-
-
-
-
-
-
 /* footer style  */
-footer{
+footer {
     text-align: center;
-    background:  #493909;
-   color: #fff;
-   padding-block: 20px;
-   margin-top: 40px;
-   font-size: 20px;
+    background: #493909;
+    color: #fff;
+    padding-block: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+/* Responsive Code  */
+/* 0 to 950px me ye media query chalegi  */
+@media screen and (max-width: 950px) {
+    .moive-container {
+        flex-direction: column;
+    }
+
+    .moive-poster img {
+        width: 100%;
+        height: fit-content;
+        margin-right: 0;
+        box-shadow: none;
+    }
+
+    .moive-info {
+        padding-inline: 30px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-container {
+        margin-top: 12px;
+    }
 }
